@@ -210,6 +210,46 @@ body {
   .compare-grid { grid-template-columns: 1fr; }
 }
 
+/* ---------- Mobile ---------- */
+@media (max-width: 720px) {
+  .section { padding: 80px 0; }
+  .hero { padding: 60px 20px; }
+  .hero-title { font-size: clamp(2rem, 9vw, 3rem); }
+  .scroll-hint { margin-top: 40px; }
+
+  .huge-number { font-size: clamp(6rem, 32vw, 10rem); }
+  .full-number {
+    font-size: 0.72rem;
+    padding: 16px 14px;
+    line-height: 1.7;
+  }
+
+  .steps::before { left: 20px; }
+  .step { gap: 16px; padding: 22px 0; }
+  .step-number {
+    flex: 0 0 42px;
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
+  }
+  .step.finale .step-number { font-size: 1.5rem; }
+  .step-body { padding-top: 4px; }
+  .step-body h3 { font-size: 1.35rem; margin-bottom: 10px; }
+  .step-body p { font-size: 0.95rem; }
+  .step-body .hint { font-size: 0.85rem; padding: 8px 12px; }
+
+  .closing { padding: 90px 0 80px; }
+  .closing-text { font-size: 1rem; }
+  .deck-emoji { font-size: 2rem; letter-spacing: 0.2em; }
+
+  footer ul { flex-direction: column; gap: 10px; }
+}
+
+@media (max-width: 400px) {
+  .container { padding: 0 18px; }
+  .full-number { font-size: 0.65rem; }
+}
+
 /* ---------- Experiment steps ---------- */
 .experiment {
   background: linear-gradient(180deg, transparent, rgba(255,255,255,0.02), transparent);
